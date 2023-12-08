@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Website</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Medical Website</h1>
+    </header>
+
+    <section id="registration">
+        <h2>User Registration</h2>
+        <form id="registrationForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+
+            <button type="button" onclick="registerUser()">Register</button>
+        </form>
+    </section>
+
+    <section id="appointment">
+        <h2>Appointment Scheduling</h2>
+        <form id="appointmentForm">
+            <label for="doctor">Select Doctor:</label>
+            <select id="doctor" required>
+                <option value="dr_smith">Dr. Smith</option>
+                <option value="dr_jones">Dr. Jones</option>
+                <!-- Add more doctors as needed -->
+            </select>
+
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" required>
+
+            <button type="button" onclick="scheduleAppointment()">Schedule Appointment</button>
+        </form>
+    </section>
+
+    <section id="doctorProfile">
+        <h2>Doctor's Profile</h2>
+        <p>Name: Dr. Smith</p>
+        <p>Specialty: Cardiology</p>
+        <p>Availability: Monday, Wednesday, Friday</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Medical Website</p>
+    </footer>
+
+    <script>
+        // Add your JavaScript code here
+        function registerUser() {
+            // Implement user registration logic
+            alert('User registered successfully!');
+        }
+
+        function scheduleAppointment() {
+            // Implement appointment scheduling logic
+            alert('Appointment scheduled successfully!');
+        }
+    </script>
+</body>
+</html>
